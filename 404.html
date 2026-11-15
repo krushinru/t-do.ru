@@ -1,65 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="yandex-verification" content="54b9c2e9e490e1af" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="yandex-verification" content="54b9c2e9e490e1af">
     <title>t-do – твой главный сервис для Telegram</title>
-    <style>
-        /* Reset default browser styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        /* Body styling */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-        /* Container styling */
-        .container {
-            max-width: 600px;
-            padding: 20px;
-            text-align: center;
-        }
-        /* Heading styles */
-        h1 {
-            font-size: 2.5rem;
-            font-weight: normal;
-            margin-bottom: 1rem;
-        }
-        /* Paragraph styles */
-        p {
-            font-size: 1.25rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        /* Link styles */
-        a {
-            color: inherit;
-            text-decoration: none;
-            border-bottom: 1px solid #000;
-        }
-        a:hover {
-            border-bottom: none;
-        }
-    </style>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Привет</h1>
-        <p>
-            С 2018 по 2021 год на этом сайте <a href="https://krushin.me/ru/projects/tdo/">работал</a> один из самых крупных сервисов для доступа к Telegram в России. 
-        </p>
-        <p>
-            Возможно совсем скоро здесь появится что-то новое.
-        </p>
-    </div>
+    <main class="page">
+        <header class="intro">
+          <h1>Привет</h1>
+          <p>
+              С 2018 по 2021 год на этом сайте <a href="https://krushin.me/ru/projects/tdo/">работал</a> один из самых крупных сервисов для доступа к Telegram в России.
+          </p>
+          <p>
+              Возможно совсем скоро здесь появится что-то новое.
+          </p>
+        </header>
+
+        <nav class="projects" aria-labelledby="projects-heading">
+          <h2 id="projects-heading">Другие проекты</h2>
+          <!-- The same project links are shown on index.html and 404.html. -->
+          <ul class="project-list" role="list">
+            <li>
+              <a class="project-link" href="https://looted.ru/">
+                <span class="project-name">Looted</span>
+                <span class="project-text">Скидки, раздачи и&nbsp;история цен на&nbsp;игры</span>
+              </a>
+            </li>
+            <li>
+              <a class="project-link" href="https://gojp.ru/">
+                <span class="project-name">GOJP</span>
+                <span class="project-text">Маршруты и&nbsp;расчёт бюджета поездки в&nbsp;Японию</span>
+              </a>
+            </li>
+            <li>
+              <a class="project-link" href="https://youragents.me/">
+                <span class="project-name">YourAgents</span>
+                <span class="project-text">ИИ-агенты и&nbsp;инструменты для работы с&nbsp;нейросетями</span>
+              </a>
+            </li>
+            <li>
+              <a class="project-link" href="https://t.me/gamer">
+                <span class="project-name">Геймер</span>
+                <span class="project-text">Новости об&nbsp;играх в&nbsp;Telegram</span>
+              </a>
+            </li>
+            <li>
+              <a class="project-link" href="https://habithit.org/">
+                <span class="project-name">HabitHit</span>
+                <span class="project-text">Трекер привычек на каждый день</span>
+              </a>
+            </li>
+            <li>
+              <a class="project-link" href="https://poapi.ru/">
+                <span class="project-name">POAPI</span>
+                <span class="project-text">Публичные API и&nbsp;примеры запросов</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </main>
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -67,7 +70,7 @@
         for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
         k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-    
+
         ym(54236968, "init", {
             clickmap:true,
             trackLinks:true,

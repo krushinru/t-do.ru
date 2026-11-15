@@ -1,0 +1,108 @@
+:root {
+  color-scheme: light;
+  --ink: #202020;
+  --muted: #535960;
+  --link: #174c9b;
+  --rule: #d9dce0;
+  font: 100%/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: .2em;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 3px;
+}
+
+::selection { background: #d9e8ff; color: var(--ink); }
+
+.page {
+  width: min(45rem, 100% - 2.5rem);
+  margin-inline: auto;
+  padding-block: clamp(1.75rem, 7vw, 5.5rem) 2rem;
+}
+
+.intro h1 {
+  margin: 0 0 .75rem;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -.025em;
+}
+
+.intro p {
+  max-width: 36rem;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.intro p + p { margin-top: .55rem; }
+
+.projects { margin-top: clamp(1.75rem, 4vw, 2.75rem); }
+
+.projects h2 {
+  margin: 0 0 .55rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-list {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid var(--rule);
+  list-style: none;
+}
+
+.project-link {
+  display: grid;
+  gap: .15rem 1.5rem;
+  align-items: baseline;
+  min-height: 3.25rem;
+  padding: .7rem .25rem .75rem 0;
+  border-top: 1px solid var(--rule);
+  text-decoration: none;
+}
+
+.project-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: underline;
+  text-decoration-color: #9db2d1;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+}
+
+.project-text {
+  color: var(--muted);
+  font-size: .9375rem;
+  line-height: 1.4;
+}
+
+.project-link:hover,
+.project-link:active,
+.project-link:focus-visible { background: #f4f7fc; }
+
+.project-link:hover .project-name,
+.project-link:focus-visible .project-name { text-decoration-color: currentColor; }
+
+.project-link:focus-visible { outline-offset: -2px; }
+
+@media (min-width: 38rem) {
+  .intro p { font-size: 1.125rem; }
+  .project-link {
+    grid-template-columns: 8.5rem minmax(0, 1fr);
+    padding-block: .95rem;
+  }
+}
